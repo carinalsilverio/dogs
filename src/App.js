@@ -6,7 +6,6 @@ import Header from './Components/Header'
 import Home from './Components/Home'
 import Login from './Components/Login/Login'
 
-
 function App() {
   return (
     
