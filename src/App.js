@@ -1,6 +1,6 @@
 import React from  'react'
 import './App.css';
-import { BrowserRouter, Route} from 'react-router-dom'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
 import Home from './Components/Home'
@@ -12,10 +12,10 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
-        <Route>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login/*" element={<Login />} />
-        </Route>
+        </Routes>
         <Footer />
       </BrowserRouter>
     </div>
