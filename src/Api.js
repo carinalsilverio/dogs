@@ -42,13 +42,10 @@ export function USER_POST(body) {
     url: API_URL + '/api/user',
     options: {
       method: 'POST',
-      headers: {    
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(body),    
+      headers: {
+        'Content-Type': 'application/json',
       },
+      body: JSON.stringify(body),
     },
   };
 }
-
